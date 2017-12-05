@@ -1,0 +1,37 @@
+body{
+	background-color: #009688;
+	grid-template-rows: 70px 90px 1fr 70px;
+	grid-template-areas: 	"head head"
+						 	"nav nav"
+						 	"main main"
+						 	"footer footer";
+}
+header{
+	grid-area: head;
+}
+nav{
+	grid-area: nav;
+}
+main{
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 100px 600px;	
+	grid-column-gap: 10px;
+}
+main > #dropdown{
+}
+main > #dropdown > div{
+
+}
+main > section{
+	display:inline-block;
+	display:grid;
+	grid-template-rows: 200px 200px;
+	grid-template-columns: 250px 250px 250px;
+}
+main > section > article{
+	overflow: hidden;
+}
+footer{
+	grid-area:footer;
+}
