@@ -5,7 +5,7 @@ body{
 	background-color: #9C27B0;
 	
 	display:grid;
-	grid-template-rows: 80px 60px 500px 40px;
+	grid-template-rows: 80px 60px minmax(500px,1fr) 40px;
 	grid-template-areas: 	"head head"
 						 	"nav nav"
 						 	"main main"
@@ -17,33 +17,64 @@ body >header{
 	background-color: #149C5C;
 	color: #ffffff;
 	text-align:center;
+
+}
+header{
+	font-family: cursive;
 }
 nav{
 	background-color: #9C27B0;
 	grid-area: nav;
-	
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
 }
-nav ul{
+nav >ul{
+	
 	height: 100%;
 	*background-color: #9C27B0;
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr 1fr 40px;
 	align-items: start;
 	list-style: none;
 	justify-content: space-around;
 	
 }
-nav ul li{
-	
-}
+
 nav > ul > li > a > img{
 	height: 30px;	
+
 }
-nav ul li:first-child{
-	
+nav > ul > li > a >img:hover{
+	transform:scale(1.1);
+}
+#setting:hover >ul{
+	display: block;
 }
 
+#menuSetting{
+	list-style: none;
+	background-color: #9C27B0;
+	padding:0;
+	max-width: 120px;
+	position: absolute;
+	right:5px;
+	display:none;
+}
+#menuSetting > li{
+	width: 120px;
+	padding: 6px 1px 6px 1px;
+	
+}
+#menuSetting > li:hover{
+	background-color: #9B25A0;
+}
+#menuSetting > li >a{
+	color:#f4f4f4;
+}
+#menuSetting > li:hover >a{
+	color:#FCD837;
+}
 main{
+	
 	background-color: #009688;
 	grid-area: main;
 	display: grid;
@@ -57,7 +88,7 @@ main > #dropdown{
 }
 main > #dropdown > div{
 	width:40px;
-	height: 30px;
+	height: 35px;
 	border:1px solid black;
 	text-align:left;
 	overflow: hidden;
@@ -65,17 +96,18 @@ main > #dropdown > div{
 	transition: width 2s;
 }
 main > #dropdown > div:hover{
-	width:100px;
-}
-main > #dropdown > div:hover > a{
-	color:black;
+	width:110px;
 }
 main > #dropdown > div > a{
+	display: block;
 	text-decoration: none;
 	color:transparent;
 	margin-right: 1px;
 	font-size: 1.2em;
 	transition: 4s;
+}
+main > #dropdown > div:hover > a{
+	color:black;
 }
 
 #showAll{
@@ -100,7 +132,7 @@ main > dropdown > div > a{
 	color:red;
 }
 main > #container{
-	
+	overflow-y: scroll;
 	display:grid;
 	justify-content: space-around;
 	grid-template-rows: repeat(autofit, 200px);
@@ -116,7 +148,7 @@ main > #container > article{
 	
 }
 main > #container > article:hover{
-	transform:perspective(500px) scaleZ(1) translateZ(4px);
+	transform:scale(1.03)
 }
 main > #container > article > header{
 	background-color: #f4f4f4;
@@ -144,6 +176,7 @@ footer{
 	background-color: #9C27B0;
 	color: #f4f4f4;
 	text-align:center;
+	box-shadow: 5px -5px 5px rgba(0,0,0,0.4);
 }
 footer a:visited, footer a:link{
 	color: #ffff00;
