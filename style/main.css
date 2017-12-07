@@ -14,11 +14,19 @@ body{
 }
 body >header{
 	grid-area: head;
+	background: url('../images/remember.png');
+	background-size:40px;
+	background-position:center;
+	background-repeat: no-repeat;
 	background-color: #149C5C;
-	color: #ffffff;
+	color: #FCD827;
 	text-align:center;
 
 }
+h1{
+	margin: 1.2em 0;
+}
+
 header{
 	font-family: cursive;
 }
@@ -28,9 +36,6 @@ nav{
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
 }
 nav >ul{
-	
-	height: 100%;
-	*background-color: #9C27B0;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr 1fr 40px;
 	align-items: start;
@@ -40,11 +45,13 @@ nav >ul{
 }
 
 nav > ul > li > a > img{
-	height: 30px;	
+	height: 35px;	
 
 }
 nav > ul > li > a >img:hover{
 	transform:scale(1.1);
+
+
 }
 #setting:hover >ul{
 	display: block;
@@ -104,28 +111,30 @@ main > #dropdown > div > a{
 	color:transparent;
 	margin-right: 1px;
 	font-size: 1.2em;
+	margin-top: 2px;
 	transition: 4s;
 }
 main > #dropdown > div:hover > a{
 	color:black;
 }
 
-#showAll{
+#showAll, .all{
 	background-color: #dd4444;
 }
-#showFirst{
+#showFirst, .interfaces{
 	background-color: #44dd44;
 }
-#showSecond{
+#showSecond, .servidor{
 	background-color: #4444dd;
 }
-#showThirth{
+#showThirth, .despliegue{
 	background-color: #dddd44;
 }
-#showFourth{
+
+#showFourth, .cliente{
 	background-color: #aa00bb
 }
-#showFifth{
+#showFifth, .android{
 	background-color: #dd44dd;
 }
 main > dropdown > div > a{
@@ -139,13 +148,13 @@ main > #container{
 	align-content: space-around;
 	grid-template-columns: 260px 260px 260px;
 }
+
 main > #container > article{
-	
-	color: #f4f4f4;
-	background-color: green;
 	padding:2px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
-	
+	border-width: 1px 0 0 1px;
+	border-color: #252525;
+	border-style: solid;
 }
 main > #container > article:hover{
 	transform:scale(1.03)
@@ -154,23 +163,28 @@ main > #container > article > header{
 	background-color: #f4f4f4;
 	text-align:center;
 	color:black;
+
 }
 
 main > #container >article > a{
-	color:orange;	
+	
 }
 #icons{
 	display: grid;
 	grid-template-columns: repeat(3,30px);
-	justify-content: space-between;
+	justify-content: space-around;
 }
 main > a {
 	text-align: right;
 }
 main  a  img{
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 }
+main a img:hover{
+	transform: translateY(-1.08px);
+}
+
 footer{
 	grid-area:footer;
 	background-color: #9C27B0;
