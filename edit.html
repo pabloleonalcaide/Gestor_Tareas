@@ -6,6 +6,8 @@
 	<meta name="Author" content="Pablo León Alcaide">
 	<link rel="stylesheet" href="./style/normalize.css">
 	<link rel="stylesheet" href="./style/edit.css">
+		<script src="./js/edit.js" type="text/javascript" charset="utf-8" async defer></script>
+		
 	<title>Gestor de Tareas</title>
 </head>
 <body>
@@ -13,13 +15,46 @@
 		<h1>Remember.me</h1>
 	</header><!-- End Header -->
 	<main>
-		<article id="editNote">
-		<header>Realizar Gestor de Tareas</header>
-		</article>
+			<form id="form">
+			<header>Realizar Gestor de Tareas</header>
+				<fieldset>
+					<label>Título:</label><br>
+					<input type="text" name="title" value="Realizar Gestor de Tareas" required pattern="[\w]+" placeholder="some tittle" id="title"><br>
+					<label>Asignatura:</label><br>
+					<select name="signature" id="signature">
+						<option value="android">Android</option>
+						<option value="cliente">Cliente</option>
+						<option value="despliegue">Despliegue</option>
+						<option value="interfaces" selected>Interfaces</option>
+						<option value="empresas">Empresas</option>
+						<option value="servidor">Servidor</option>
+					</select><br>
+					<label>Comentario:</label><br>
+					<textarea name="coment" id="coment" pattern="[\w]+"></textarea><br>
+					<label> Url referencia:</label><br>
+					<input type="url" name="url" id="url" placeholder="ej. github.com/jaimerabasco"><br>
+					<label> Prioridad: </label><br>
+					<select name="priority" id="priority">
+						<option value="max"> max </option>
+						<option value="high"> high </option>
+						<option value="moderate"> moderate </option>
+						<option value="low"> low </option>
+						<option value="none">none</option>
+					</select>
+				</fieldset>
+				<ul id="rightIcons">
+
+				  
+					<li><a href="#" name="send"  id="calendarButton"><img  class="rightIcon" src="./images/calendar.svg"></a></li>
+					<li><a href="https://twitter.com/share?url=https://www.github.com/pabloleonalcaide&amp;text=Interesantes%20Codigos&amp;hashtags=@pabloleonalcaide" target="_blank" type="submit" name="save"  id="shareButton"><img  class="rightIcon" src="./images/share.svg"></a></li>
+					<li><a  href="mailto:pabloleonpsico@gmail.com" type="reset" name="mail"  id="mailButton"><img class="rightIcon"  src="./images/mail.svg"></a></li>
+				</ul>
+				<ul id="iconList">	
+					<li><a href="#" name="send"  id="sendButton"><img  class="bottomIcon" src="./images/write.svg"></a></li>
+					<li><a href="#" type="submit" name="save" id="saveButton"><img  class="bottomIcon" src="./images/save.svg"></a></li>
+					<li><a href="#" type="reset" name="trash" id="trashButton"><img class="bottomIcon"  src="./images/trash.svg"></a></li>
+				</ul>
+			</form>		
 	</main> <!-- End Main -->
-	<footer>
-		<span>Este sitio web pertenece a Pablo León Alcaide</span> | <a href="#">Privacidad</a> | <a href="#">Licencia</a>
-		<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-	<footer><!-- End Footer -->
 </body>
 </html>

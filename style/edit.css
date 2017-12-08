@@ -1,0 +1,88 @@
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #009688;
+	
+}
+body >header{
+	background-position:center;
+	background-repeat: no-repeat;
+	background-color: #009688;
+	color: #FCD827;
+	text-align:center;
+
+}
+h1{
+	margin: 0;
+}
+
+header{
+	font-family: cursive;
+}
+
+main{
+	background-color: #009688;
+}
+form{
+	width: 60%;
+	height: 90%;
+	margin: 0 auto;
+	background-color: #9c27b0;
+	border-radius: 25px 25px 0 0;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+}
+
+
+form >fieldset{
+	border: none;
+	display:inline-block;
+	width: 80%;
+}
+form > #rightIcons{
+	display:inline-block;
+	vertical-align: top;
+	
+}
+form a {
+	transition: 3s;
+}
+ #rightIcons >li> a:hover > img{
+	transform:translateX(2px);
+}
+#iconList > li >a:hover > img{
+	transform: translateY(-2px);
+
+}
+label , input, select, textarea{
+	max-width: 30vw;
+	margin: 0 20px 0 20px;
+	font-size: 0.9em;
+}
+
+ ul{
+	list-style: none;
+	padding:0;
+}
+form > ul> li{
+	display:block;
+	width: 30px;
+}
+form  >header{
+	border-radius: 25px 25px 0 0;
+	background-color: #f4f4f4;
+	text-align: center;
+	
+}
+.bottomIcon, .rightIcon{
+	width:5vw;
+	height:5vh;
+}
+
+#iconList{
+	width:100%;
+	display:grid;
+	grid-template-columns: repeat(3, minmax(5vh,50px));
+	justify-content: flex-end;
+	column-gap: 10px; 
+}
