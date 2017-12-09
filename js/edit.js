@@ -1,7 +1,7 @@
 	let sendIcon = document.getElementById("sendButton");
 	let signature = document.getElementById("signature");
 	let form = document.getElementById("form");
-	let shareIcon = document.getElementById("shareButton");
+
 
 let changeBg = () =>{
 		let option = signature.options[signature.selectedIndex].value;
