@@ -13,6 +13,10 @@ body >header{
 	text-align:center;
 
 }
+header img {
+	width:50px;
+	height:50px;
+}
 h1{
 	margin: 0;
 }
@@ -21,11 +25,61 @@ header{
 	font-family: cursive;
 }
 
+nav{
+	background-color: #9C27B0;
+	grid-area: nav;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+nav >ul{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 1fr 40px;
+	align-items: start;
+	list-style: none;
+	justify-content: space-around;
+	
+}
+
+nav > ul > li > a > img{
+	height: 35px;	
+
+}
+nav > ul > li > a >img:hover{
+	transform:scale(1.1);
+
+}
+#setting:hover >ul{
+	display: block;
+}
+
+#menuSetting{
+	list-style: none;
+	background-color: #9C27B0;
+	padding:0;
+	max-width: 120px;
+	position: absolute;
+	right:5px;
+	display:none;
+}
+#menuSetting > li{
+	width: 120px;
+	padding: 6px 1px 6px 1px;
+	
+}
+#menuSetting > li:hover{
+	background-color: #9B25A0;
+}
+#menuSetting > li >a{
+	color:#f4f4f4;
+}
+#menuSetting > li:hover >a{
+	color:#FCD837;
+}
+
 main{
 	background-color: #009688;
 }
 form{
-	width: 60%;
+	width: 60vw;
 	height: 90%;
 	margin: 0 auto;
 	background-color: #9c27b0;
@@ -47,7 +101,7 @@ form > #rightIcons{
 form a {
 	transition: 3s;
 }
- #rightIcons >li> a:hover > img{
+#rightIcons >li> a:hover > img{
 	transform:translateX(2px);
 }
 #iconList > li >a:hover > img{
@@ -57,7 +111,7 @@ form a {
 label , input, select, textarea{
 	max-width: 30vw;
 	margin: 0 20px 0 20px;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 }
 
  ul{

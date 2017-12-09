@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./style/normalize.css">
 	<link rel="stylesheet" href="./style/main.css">
 	<script src="./js/form.js" type="text/javascript" charset="utf-8" async defer></script>
-	<title>Gestor de Tareas</title>
+	<title>Gestor de Tareas - Pablo Leon</title>
 </head>
 <body>
 	<header>
@@ -17,7 +17,7 @@
 		<ul>
 		<li><a href="#"><img title="Back home" src="./images/home.svg" alt="home" id="imgHome"/></a></li>
 		<li><input type="search" id="inputSearch" placeholder="search"></li>
-		<li><a href="#"><img title="Most recent" src="./images/alarm.svg" alt="alert" id="imgAlarm"/></a></li>
+		<li><a href="#"><img title="Most recent" src="./images/alarm.svg" alt="alert" id="imgAlarm" onclick="showRecent();"/></a></li>
 		<li><a href="#" id="addTodo"><img title="add ToDo" src="./images/add.svg" alt="add" id="imgAdd"/></a></li>
 		<li id="setting"><a href="#"><img title="Settings" src="./images/gear.svg" alt="setting" id="imgGear"/></a>
 			<ul id="menuSetting">
@@ -44,59 +44,59 @@
 				<header>Título</header>
 				<p>Tarea sencillísima y sin complicación que se hace en 5 minutos mientras te tomas el café</p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
-					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="#" class="articleIco" ><img src="./images/done.svg" alt="done"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			<article class="note servidor">
 				<header>Servidor</header>
 				<p>Montar el backend para el lindo gatito, gestionando peticiones asíncronas al cuenco de comida </p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
 					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			<article class="note cliente">
 				<header>Cliente</header>
 				<p>Hacer el lindo gatito con objetos literales, excepciones, callbacks y capaz de reirse de Siri</p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
 					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			<article class="note android">
 				<header>Android</header>
-				<p>Hacer una app que me prepare el café por las mañanas y me de los buenos días</p>
+				<p>Hacer una app que me prepare el café por las mañanas y me de los buenos días con mucho ánimo</p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
 					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			<article class="note despliegue">
 				<header>Despliegue</header>
 				<p>Comprobar cuantas máquinas virtuales soporta mi ordenador de forma simultánea, batir record</p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
 					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			<article class="note interfaces">
 				<header>Interfaces</header>
 				<p>Hacer una web tan buena que acabe haciéndola página de inicio de todos mis navegadores</p>
 				<div id="icons">
-					<a href="#" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
+					<a href="https://calendar.google.com" class="articleIco"><img src="./images/calendar.svg" alt="date"></a>
 					<a href="#" class="articleIco"><img src="./images/done.svg" alt="done"></a>
-					<a href="#" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
+					<a href="./edit.html" class="articleIco"><img src="./images/edit.svg" alt="edit"></a>
 				</div>	
 			</article>
 			
 		</section>
-		<img src="" alt="">
+		<p id="time"></p>
 		<a href="#" id="trashSection"><img src="./images/trash.svg" alt="delete dashboard" title="Remove all cards"></a>
 
 	</main> <!-- End Main -->

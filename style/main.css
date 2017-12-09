@@ -21,19 +21,32 @@ body >header{
 	background-color: #149C5C;
 	color: #FCD827;
 	text-align:center;
-
 }
+
 h1{
 	margin: 1.2em 0;
+	text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
 }
 
+h1:hover{
+	text-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
 header{
 	font-family: cursive;
+	font-weight: bold;
 }
+	/* <<<<<<<<<< NAV */
 nav{
 	background-color: #9C27B0;
 	grid-area: nav;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+
+}
+::placeholder{
+	font-family: cursive;
+}
+nav input{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.9);
 }
 nav >ul{
 	display: grid;
@@ -50,7 +63,6 @@ nav > ul > li > a > img{
 }
 nav > ul > li > a >img:hover{
 	transform:scale(1.1);
-
 
 }
 #setting:hover >ul{
@@ -80,6 +92,8 @@ nav > ul > li > a >img:hover{
 #menuSetting > li:hover >a{
 	color:#FCD837;
 }
+
+/** MAIN  <<<<<<<<<<<<<<<<<<<*/
 main{
 	
 	background-color: #009688;
@@ -96,21 +110,23 @@ main > #dropdown{
 main > #dropdown > div{
 	width:40px;
 	height: 35px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 	border:1px solid black;
 	text-align:left;
 	overflow: hidden;
+	font-weight: bold;
 	border-radius: 0 10px 10px 0;
 	transition: width 2s;
 }
 main > #dropdown > div:hover{
-	width:110px;
+	width:120px;
 }
 main > #dropdown > div > a{
 	display: block;
 	text-decoration: none;
 	color:transparent;
 	margin-right: 1px;
-	font-size: 1.2em;
+	font-size: 1.18em;
 	margin-top: 2px;
 	transition: 4s;
 }
@@ -130,7 +146,6 @@ main > #dropdown > div:hover > a{
 #showThirth, .despliegue{
 	background-color: #dddd44;
 }
-
 #showFourth, .cliente{
 	background-color: #aa00bb
 }
@@ -151,13 +166,13 @@ main > #container{
 
 main > #container > article{
 	padding:2px;
-	box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+	box-shadow: 5px 5px 10px rgba(50,50,50,0.8);
 	border-width: 1px 0 0 1px;
 	border-color: #252525;
 	border-style: solid;
 }
 main > #container > article:hover{
-	transform:scale(1.03)
+	transform:scale(1.03);
 }
 main > #container > article > header{
 	background-color: #f4f4f4;
@@ -185,6 +200,7 @@ main a img:hover{
 	transform: translateY(-1.08px);
 }
 
+/*** FOOTER **/
 footer{
 	grid-area:footer;
 	background-color: #9C27B0;
@@ -201,3 +217,7 @@ footer span{
 footer div{
 	font-size: 0.8rem;
 }
+#time{
+text-align:center;
+}
+

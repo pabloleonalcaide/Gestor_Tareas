@@ -12,8 +12,26 @@
 </head>
 <body>
 	<header>
-		<h1>Remember.me</h1>
+		<a href="./index.html"><img src="./images/back.svg"></a><h1>Remember.me</h1>
 	</header><!-- End Header -->
+<nav>
+		<ul>
+		<li><a href="#"><img title="Back home" src="./images/home.svg" alt="home" id="imgHome"/></a></li>
+		<li><input type="search" id="inputSearch" placeholder="search"></li>
+		<li><a href="#"><img title="Most recent" src="./images/alarm.svg" alt="alert" id="imgAlarm" onclick="showRecent();"/></a></li>
+		<li><a href="#" id="addTodo"><img title="add ToDo" src="./images/add.svg" alt="add" id="imgAdd"/></a></li>
+		<li id="setting"><a href="#"><img title="Settings" src="./images/gear.svg" alt="setting" id="imgGear"/></a>
+			<ul id="menuSetting">
+				<li><a href="#">Sincronizar</a></li>
+				<li><a href="#">Preferencias</a></li>
+				<li><a href="#">Ayuda</a></li>
+				<li><a href="#">Premium</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</li>
+		</ul>
+	</nav> <!-- End Nav -->
+
 	<main>
 			<form id="form">
 			<header>Realizar Gestor de Tareas</header>
@@ -32,9 +50,9 @@
 					<label>Comentario:</label><br>
 					<textarea name="coment" id="coment" pattern="[\w]+"></textarea><br>
 					<label> Url referencia:</label><br>
-					<input type="url" name="url" id="url" placeholder="ej. github.com/jaimerabasco"><br>
+					<input type="url" name="url" id="url" placeholder="github.com/jaimerabasco"><br>
 					<label> Prioridad: </label><br>
-					<select name="priority" id="priority">
+					<select name="priority" id="priority" title="select priority">
 						<option value="max"> max </option>
 						<option value="high"> high </option>
 						<option value="moderate"> moderate </option>
@@ -45,14 +63,14 @@
 				<ul id="rightIcons">
 
 				  
-					<li><a href="#" name="send"  id="calendarButton"><img  class="rightIcon" src="./images/calendar.svg"></a></li>
-					<li><a href="https://twitter.com/share?url=https://www.github.com/pabloleonalcaide&amp;text=Interesantes%20Codigos&amp;hashtags=@pabloleonalcaide" target="_blank" type="submit" name="save"  id="shareButton"><img  class="rightIcon" src="./images/share.svg"></a></li>
-					<li><a  href="mailto:pabloleonpsico@gmail.com" type="reset" name="mail"  id="mailButton"><img class="rightIcon"  src="./images/mail.svg"></a></li>
+					<li><a href="https://calendar.google.com" name="send"  title="calendar" id="calendarButton"><img  class="rightIcon" src="./images/calendar.svg"></a></li>
+					<li><a href="https://twitter.com/share?url=https://www.github.com/pabloleonalcaide&amp;text=Interesantes%20Codigos&amp;hashtags=@pabloleonalcaide" target="_blank" type="submit" name="share" title="share card" id="shareButton"><img  class="rightIcon" src="./images/share.svg"></a></li>
+					<li><a  href="mailto:pabloleonpsico@gmail.com" type="reset" title="send by mail" name="mail"  id="mailButton"><img class="rightIcon"  src="./images/mail.svg"></a></li>
 				</ul>
 				<ul id="iconList">	
-					<li><a href="#" name="send"  id="sendButton"><img  class="bottomIcon" src="./images/write.svg"></a></li>
-					<li><a href="#" type="submit" name="save" id="saveButton"><img  class="bottomIcon" src="./images/save.svg"></a></li>
-					<li><a href="#" type="reset" name="trash" id="trashButton"><img class="bottomIcon"  src="./images/trash.svg"></a></li>
+					<li><a href="#" title="mark as done" name="send"  id="sendButton"><img  class="bottomIcon" src="./images/write.svg"></a></li>
+					<li><a href="#" title="save card" type="submit" name="save" id="saveButton"><img  class="bottomIcon" src="./images/save.svg"></a></li>
+					<li><a href="#" title="remove card" type="reset" name="trash" id="trashButton"><img class="bottomIcon"  src="./images/trash.svg"></a></li>
 				</ul>
 			</form>		
 	</main> <!-- End Main -->

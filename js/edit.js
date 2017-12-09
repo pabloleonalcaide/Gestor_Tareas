@@ -26,3 +26,5 @@ let closeWindow = () => {
 
 		sendIcon.addEventListener("click",closeWindow);
 		signature.addEventListener("change",changeBg);
+
+
