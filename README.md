@@ -1,4 +1,4 @@
-# Gestor de Tareas
+# Gestor de Tareas  (HTML5 / CSS3)
 ### Asignatura: Diseño de Interfaces Web
 ### Autor: @pabloleonalcaide
 
